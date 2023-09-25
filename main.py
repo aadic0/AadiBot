@@ -19,16 +19,15 @@ intents.members = True
 
 # Import commands from the discord.ext module.
 from discord.ext import commands
-
 # Import the os module.
 import os
-
+   
 # Import load_dotenv function from dotenv module.
 from dotenv import load_dotenv
 
 # Import pickle so we can read and write dictionaries to files. Will use dump() and load() methods for gambling feature.
 import pickle
-
+  
 # Other common modules to be imported.
 from datetime import datetime
 import requests
