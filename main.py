@@ -37,26 +37,6 @@ import time
 client_id_reddit = "qvpKu3TkrMjTFEoWDdbdbw"  # Should store client_id_reddit as a secret.
 REDDIT_SECRET = os.getenv("REDDIT_SECRET")
 
-# auth_reddit = requests.auth.HTTPBasicAuth(client_id_reddit, REDDIT_SECRET)
-
-# with open('pwus.txt', 'r') as f:
-#   pw = f.read()
-
-# data_reddit = {
-#   'grant_type': 'password',
-#   'username': 'momgeyforme', #should store reddit username and password as secret
-#   'password': 'chauhan246'
-# }
-
-# headers = {'User-Agent': 'MyAPI/0.0.1'}
-# res = requests.post('https://www.reddit.com/api/v1/access_token', 
-#                    auth=auth_reddit, data=data_reddit, headers=headers)
-# REDDIT_TOKEN = res.json()["access_token"]
-# headers['Authorization'] = f'bearer {REDDIT_TOKEN}'
-
-# res = requests.get('https://oauth.reddit.com/r/python/hot', headers=headers)
-# print(requests.get('https://oauth.reddit.com/api/v1/me'))  
-
 # WEATHER API VARIABLES
 api_key = "771039d4d2dbb03fa15e888c1b70e2fb"
 city = "Calgary"
@@ -105,12 +85,6 @@ bot = commands.Bot(command_prefix="$")
 
 # GambleSaves code
 open('gambleSaves.txt', 'r+')
-
-#Dhanbot main code
-# client.on("ready", async () => {
-#   const myGuild = client.guilds.cache.get(guildId)
-#   await myGuild.setIcon("./images/image.png")
-# })
 
 @bot.command()
 async def status(ctx):
